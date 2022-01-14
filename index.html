@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+    <!--====================head====================-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--------->
+        <title>Home | Homer Alaska Web Design Tundra Technologies</title>
+        <link rel="icon" href="images/logo/favicon.jpg" sizes="32x32">
+        <!-----Tailwind css Js---->
+        <script defer src="js/alpine.min.js"></script>
+        <!-----css---->
+        <link rel="stylesheet" href="output/tailwind.css">
+        <!-- splide Slider assets -->
+        <link rel="stylesheet" href="css/splide.min.css">
+        <script src="js/splide.min.js"></script>
+        <!-- typed js -->
+        <script src="js/typed.js"></script>
+    </head>
+    <!--====================body====================-->
+    <body class=" overflow-x-hidden">
+        <!--====================Header====================-->
+        <header class=" absolute left-0 right-0">
+            <div class="font-opensans bg-transparent" x-data="{humberger: false}">
+                <!--========-->
+                <nav class=" flex items-center md:justify-end justify-center py-3 container mx-auto xl:px-28 sm:px-0 px-5 lg:px-16">
+                    <!--====Mobile menu button====-->
+                    <div @click="humberger=true" class="tracking-wider font-thin text-sm text-white flex items-center md:hidden cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <span>Menu</span>
+                    </div>
+                    <!--====Mobile menu====-->
+                    <div :class="{'translate-x-0' : humberger, '-translate-x-full': !humberger  }" class="absolute lg:hidden w-2/4 transform transition-transform duration-700 ease-in-out z-50 bg-gray-800 left-0 top-0 py-4 shadow-md h-screen">
+                        <!--====close button====-->
+                        <div class="absolute right-0 top-7 text-gray-500 px-5 cursor-pointer">
+                            <div @click="humberger=false" class="appearance-none outline-none border-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </div>
+                        </div>
+                        <!--====menu====-->
+                        <div class="h-1/2 flex flex-col justify-center">
+                            <ul class="space-y-4 tracking-wider font-thin px-3 w-full text-center">
+                                <!---->
+                                <li>
+                                    <a class="text-white opacity-75 hover:opacity-75 p-2.5" href="index.html">Home</a>
+                                </li>
+                                <!---->
+                                <li>
+                                    <a class="text-white hover:opacity-75 p-2.5" href="about.html">About Us</a>
+                                </li>
+                                <!---->
+                                <li>
+                                    <a class="text-white hover:opacity-75 p-2.5" href="services.html">Services</a>
+                                </li>
+                                <!---->
+                                <li>
+                                    <a class="text-white hover:opacity-75 p-2.5" href="portfolio.html">Portfolio</a>
+                                </li>
+                                <!---->
+                                <li>
+                                    <a class="text-white hover:opacity-75 p-2.5" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--========-->
+                    <ul class="hidden md:flex space-x-2">
+                        <!---->
+                        <li>
+                            <a class="text-white opacity-75 hover:opacity-75 p-2.5" href="index.html">Home</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-white hover:opacity-75 p-2.5" href="about.html">About Us</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-white hover:opacity-75 p-2.5" href="services.html">Services</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-white hover:opacity-75 p-2.5" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-white hover:opacity-75 p-2.5" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--====================main====================-->
+        <main>
+            <!-- ==========section 001========== -->
+            <section>
+                <!--========-->
+                <div id="parallax" class="parallax h-screen min-h-screen bg-cover  bg-fixed bg-no-repeat" style="background-image: url(images/home/bg1.jpg);">
+                    <!--========-->
+                     <div class=" w-full xl:px-28 sm:px-0 px-5 py-20 h-full bg-black bg-opacity-25">
+                         <!--========-->
+                        <div class="flex flex-col items-center justify-center container mx-auto mb-20">
+                            <!--========-->
+                            <img height="100%" width="100%" src="images/logo/logo.png" class="w-full lg:w-auto mb-8" alt="//" />
+                            <!--========-->
+                            <div class=" heading font-playfairdisplaysc capitalize md:h-24 lg:h-32 h-20 text-center lg:text-6xl md:text-5xl text-3xl text-white leading-snug whitespace-nowrap">
+                                <h1 class="element1"></h1>
+                            </div>
+                            <!--========-->
+                            <p class="text-white text-xl font-extralight tracking-wider mb-8 font-sourcesanspro">Web Design in Homer, Alaska</p>
+                            <!--========-->
+                            <div>
+                                <a class="font-opensans uppercase h-14 w-56 flex items-center justify-center text-center rounded-full duration-700 bg-yellow-700 hover:bg-white hover:text-yellow-700 text-white" href="contact.html">Contact us</a>
+                            </div>
+                        </div>
+                        <!--========-->
+                        <div class="w-full flex items-center justify-center animate-bounce">
+                            <div class="rounded-full bg-white text-gray-800 flex items-center justify-center">
+                                <svg class="h-16 w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 002========== -->
+            <section>
+               <div class="grid md:gap-10 gap-20 md:grid-cols-2 grid-cols-1 text-center md:text-left xl:px-28 lg:px-16 sm:px-0 px-5 py-10 container mx-auto sm:w-3/5 md:w-auto">
+                   <!--========-->
+                    <div>
+                        <!--========-->
+                        <div>
+                            <!--========-->
+                            <h1 class=" lg:text-4xl md:text-3xl text-2xl text-zinc-700 font-playfairdisplaysc">About Us</h1>
+                            <!--========-->
+                            <div class=" my-5 border-b border-yellow-700 md:w-12 w-8 mx-auto md:mx-0"></div>
+                        </div>
+                        <!--========-->
+                        <div class="lg:w-10/12">
+                            <!--========-->
+                            <p class=" md:text-sm text-xs text-zinc-600 font-playfairdisplaysc">Homer Alaska Web Design</p>
+                            <!--========-->
+                            <p class=" text-xl text-zinc-700 font-opensans mb-6">Designing and Building high quality, professionally designed websites in Alaska, and around the country for 20 years</p>
+                            <!--========-->
+                            <p class=" text-base text-zinc-500 font-opensans mb-10">Looking for a professionally designed site for your small business, vacation rental, B&B, or non-profit organization?  We have extensive experience creating that <span class=" font-bold">eye-grabbing design</span> to bring in visitors.</p>
+                            <div>
+                            <a class="font-opensans uppercase py-2.5 px-10 rounded duration-500 bg-blue-900 hover:bg-opacity-70 text-white" href="services.html">OUR SERVICES</a>
+                        </div>
+                        </div>
+                    </div>
+                    <!--========-->
+                    <div class="grid xl:gap-16 gap-8 md:grid-cols-2 grid-cols-1">
+                        <!--========-->
+                        <div class=" flex flex-col gap-8">
+                            <!--========-->
+                            <div class=" text-center md:text-left">
+                                <!--========-->
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto md:mx-0 w-11 h-11 text-blue-900" role="img" viewBox="0 0 512 512">
+                                        <path fill="currentColor" d="M167.02 309.34c-40.12 2.58-76.53 17.86-97.19 72.3-2.35 6.21-8 9.98-14.59 9.98-11.11 0-45.46-27.67-55.25-34.35C0 439.62 37.93 512 128 512c75.86 0 128-43.77 128-120.19 0-3.11-.65-6.08-.97-9.13l-88.01-73.34zM457.89 0c-15.16 0-29.37 6.71-40.21 16.45C213.27 199.05 192 203.34 192 257.09c0 13.7 3.25 26.76 8.73 38.7l63.82 53.18c7.21 1.8 14.64 3.03 22.39 3.03 62.11 0 98.11-45.47 211.16-256.46 7.38-14.35 13.9-29.85 13.9-45.99C512 20.64 486 0 457.89 0z"/>
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p class=" font-lato mb-2.5 mt-4 text-zinc-800 font-bold">CUSTOM DESIGN</p>
+                                    <!--========-->
+                                    <p class=" font-sourcesanspro text-lg  font-light text-gray-500">Beautiful graphic designs, created by a professional graphic artist, just for you!</p>
+                                </div>
+                            </div>
+                            <!--========-->
+                            <div class=" text-center md:text-left">
+                                <!--========-->
+                                <div>
+                                    <svg class="mx-auto md:mx-0 w-11 h-11 text-blue-900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1">
+                                            <g id="🔍-System-Icons" stroke="none" stroke-width="2" fill="currentColor"fill-rule="evenodd">
+                                                <g id="ic_fluent_phone_laptop_24_regular" fill="currentColor" fill-rule="nonzero">
+                                                    <path d="M8.25443626,8.00300112 C9.22093457,8.00300112 10.0044363,8.78650281 10.0044363,9.75300112 L10.0044363,19.2531419 C10.0044363,20.2196402 9.22093457,21.0031419 8.25443626,21.0031419 L3.75,21.0031419 C2.78350169,21.0031419 2,20.2196402 2,19.2531419 L2,9.75300112 C2,8.78650281 2.78350169,8.00300112 3.75,8.00300112 L8.25443626,8.00300112 Z M8.25443626,9.50300112 L3.75,9.50300112 C3.61192881,9.50300112 3.5,9.61492993 3.5,9.75300112 L3.5,19.2531419 C3.5,19.3912131 3.61192881,19.5031419 3.75,19.5031419 L8.25443626,19.5031419 C8.39250745,19.5031419 8.50443626,19.3912131 8.50443626,19.2531419 L8.50443626,9.75300112 C8.50443626,9.61492993 8.39250745,9.50300112 8.25443626,9.50300112 Z M6.25221813,17 C6.66643169,17 7.00221813,17.3357864 7.00221813,17.75 C7.00221813,18.1296958 6.72006425,18.443491 6.35398869,18.4931534 L6.25221813,18.5 L5.75221813,18.5 C5.33800457,18.5 5.00221813,18.1642136 5.00221813,17.75 C5.00221813,17.3703042 5.28437201,17.056509 5.65044757,17.0068466 L5.75221813,17 L6.25221813,17 Z M21.2493746,16.4998418 C21.6635882,16.4998418 21.9993746,16.8356283 21.9993746,17.2498418 C21.9993746,17.6295376 21.7172207,17.9433328 21.3511452,17.9929952 L21.2493746,17.9998418 L11,17.9993431 L11,16.4993431 L21.2493746,16.4998418 Z M18.25,5.00034313 C19.2164983,5.00034313 20,5.78384482 20,6.75034313 L20,14.2506308 C20,15.2171291 19.2164983,16.0006308 18.25,16.0006308 L11,16.0003431 L11,14.5003431 L18.25,14.5006308 C18.3880712,14.5006308 18.5,14.388702 18.5,14.2506308 L18.5,6.75034313 C18.5,6.61227194 18.3880712,6.50034313 18.25,6.50034313 L5.75,6.50034313 C5.61192881,6.50034313 5.5,6.61227194 5.5,6.75034313 L5.499,6.99934313 L4,6.99934313 L4,6.75034313 C4,5.78384482 4.78350169,5.00034313 5.75,5.00034313 L18.25,5.00034313 Z"/>
+                                                </g>
+                                            </g>
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p class=" font-lato mb-2.5 mt-4 text-zinc-800 font-bold">RESPONSIVE DESIGN</p>
+                                    <!--========-->
+                                    <p class=" font-sourcesanspro text-lg  font-light text-gray-500">In today's mobile society, we make sure your website displays well on any device, from large desktop monitors, to smartphones.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--========-->
+                        <div class=" flex flex-col gap-8">
+                            <!--========-->
+                            <div class=" text-center md:text-left">
+                                <!--========-->
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto md:mx-0 w-11 h-11 text-blue-900" role="img" viewBox="0 0 512 512">
+                                    <path xmlns="http://www.w3.org/2000/svg" fill="currentColor" d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z"/>
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p class=" font-lato mb-2.5 mt-4 text-zinc-800 font-bold">CUSTOM DESIGN</p>
+                                    <!--========-->
+                                    <p class=" font-sourcesanspro text-lg  font-light text-gray-500">With many years experience in this popular open source CMS, we are able to create custom themes and plugins.</p>
+                                </div>
+                            </div>
+                            <!--========-->
+                            <div class=" text-center md:text-left">
+                                <!--========-->
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" class="mx-auto md:mx-0 w-11 h-11 text-blue-900" viewBox="0 0 32 32" version="1.1">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd" sketch:type="MSPage">
+                                            <g id="icon-114-lock" sketch:type="MSArtboardGroup" fill="currentColor">
+                                                <path d="M16,21.9146472 L16,24.5089948 C16,24.7801695 16.2319336,25 16.5,25 C16.7761424,25 17,24.7721195 17,24.5089948 L17,21.9146472 C17.5825962,21.708729 18,21.1531095 18,20.5 C18,19.6715728 17.3284272,19 16.5,19 C15.6715728,19 15,19.6715728 15,20.5 C15,21.1531095 15.4174038,21.708729 16,21.9146472 L16,21.9146472 Z M9,14.0000125 L9,10.499235 C9,6.35670485 12.3578644,3 16.5,3 C20.6337072,3 24,6.35752188 24,10.499235 L24,14.0000125 C25.6591471,14.0047488 27,15.3503174 27,17.0094776 L27,26.9905224 C27,28.6633689 25.6529197,30 23.991212,30 L9.00878799,30 C7.34559019,30 6,28.652611 6,26.9905224 L6,17.0094776 C6,15.339581 7.34233349,14.0047152 9,14.0000125 L9,14.0000125 L9,14.0000125 Z M12,14 L12,10.5008537 C12,8.0092478 14.0147186,6 16.5,6 C18.9802243,6 21,8.01510082 21,10.5008537 L21,14 L12,14 L12,14 L12,14 Z" id="lock" sketch:type="MSShapeGroup"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <!--========-->
+                                <div>
+                                    <!--========-->
+                                    <p class=" font-lato mb-2.5 mt-4 text-zinc-800 font-bold">RELIABLE HOSTING</p>
+                                    <!--========-->
+                                    <p class=" font-sourcesanspro text-lg  font-light text-gray-500">We offer reliable hosting in a secure data center, using state of the art equipment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </section>
+            <!-- ==========section 003========== -->
+             <section style="background: url('images/home/bg2.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <!--========-->
+                <div class=" py-10 xl:px-28 lg:px-16 sm:px-0 px-5 bg-white bg-opacity-90 relative duration-700">
+                    <!--====heading====-->
+                    <div class=" overflow-hidden flex items-center sm:px-10 px-5 justify-center font-playfairdisplaysc capitalize text-center">
+                        <!--========-->
+                        <div class=" w-24 border-b border-zinc-700"></div>
+                        <!--========-->
+                        <h1 class=" md:text-3xl text-2xl text-zinc-700 sm:px-5 px-3 whitespace-nowrap">Featured Sites</h1>
+                        <!--========-->
+                        <div class=" w-24 border-b border-zinc-700"></div>
+                    </div>
+                    <!--====slider====-->
+                    <div id="slider1" class="splide relative">
+                        <!--====content====-->
+                        <div class="splide__track">
+                            <!--========-->
+                            <ul class="splide__list">
+                                <!--========-->
+                                <li class="splide__slide">
+                                    <!--========-->
+                                    <div class="grid gap-4 md:grid-cols-2 grid-cols-1 py-10 container mx-auto sm:px-10">
+                                        <!--========-->
+                                        <div class="text-center md:text-left xl:w-10/12 md:order-1 order-2">
+                                            <!--========-->
+                                            <h1 class="text-2xl lg:text-3xl mb-6 font-playfairdisplaysc text-zinc-700">The Alaska Peony Growers Association</h1>
+                                            <!--========-->
+                                            <p class="text-zinc-600 font-opensans my-5 md:text-base text-sm">Alaska is unique in its ability to grow spectacular peonies, at a time of year they are unavailable elsewhere.  The Alaska Peony Growers website was built to market the brand of Alaska Peonies to the world.  It also features a full featured member management system, and a complex members only content area.</p>
+                                            <!--========-->
+                                            <div>
+                                                <a class="inline-block font-opensans py-2.5 px-7 rounded duration-500 bg-blue-900 hover:bg-opacity-70 text-white" href="contact.html">Visit Site</a>
+                                            </div>
+                                        </div>
+                                        <!--========-->
+                                        <div class="md:order-2 order-1">
+                                            <img height="100%" width="100%" src="images/home/f1.png" alt="//" class="w-auto h-auto mx-auto ">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--========-->
+                                <li class="splide__slide">
+                                    <!--========-->
+                                    <div class="grid gap-4 md:grid-cols-2 grid-cols-1 py-10 container mx-auto sm:px-10">
+                                        <!--========-->
+                                        <div class="text-center md:text-left xl:w-10/12 md:order-1 order-2">
+                                            <!--========-->
+                                            <h1 class="text-2xl lg:text-3xl mb-6 font-playfairdisplaysc text-zinc-700">Alaska Permanent Capital Management</h1>
+                                            <!--========-->
+                                            <p class="text-zinc-600 font-opensans my-5 md:text-base text-sm">Alaska Permanent Capital Management Co. is an Anchorage based investment manager firm. The firm provides services to corporations and State or municipal government entities, as well as individuals including high net worth individuals, charitable organizations, non-profit endowments and foundations, state agencies, utilities, financial institutions, insurance companies, and health care organizations. It manages separate client focused fixed income and balanced portfolios.</p>
+                                            <!--========-->
+                                            <div>
+                                                <a class="inline-block font-opensans py-2.5 px-7 rounded duration-500 bg-blue-900 hover:bg-opacity-70 text-white" href="contact.html">Visit Site</a>
+                                            </div>
+                                        </div>
+                                        <!--========-->
+                                        <div class="md:order-2 order-1">
+                                            <img height="100%" width="100%" src="images/home/f2.png" alt="//" class="w-auto h-auto mx-auto ">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--========-->
+                                <li class="splide__slide">
+                                    <!--========-->
+                                    <div class="grid gap-4 md:grid-cols-2 grid-cols-1 py-10 container mx-auto sm:px-10">
+                                        <!--========-->
+                                        <div class="text-center md:text-left xl:w-10/12 md:order-1 order-2">
+                                            <!--========-->
+                                            <h1 class="text-2xl lg:text-3xl mb-6 font-playfairdisplaysc text-zinc-700">Loonsong Mountain Chalet</h1>
+                                            <!--========-->
+                                            <p class="text-zinc-600 font-opensans my-5 md:text-base text-sm">The adventure of a lifetime awaits you on this Alaskan lake, only one hour bush-plane flight from Anchorage.It is the only private land on Loonsong lake and in the vast wilderness area adjoining the Kenai Fjords National Park.Come fly with them this summer and experience first hand the thrill and excitement of some of the best and wildest of Alaska’s coastal mountain ranges!</p>
+                                            <!--========-->
+                                            <div>
+                                                <a class="inline-block font-opensans py-2.5 px-7 rounded duration-500 bg-blue-900 hover:bg-opacity-70 text-white" href="contact.html">Visit Site</a>
+                                            </div>
+                                        </div>
+                                        <!--========-->
+                                        <div class="md:order-2 order-1">
+                                            <img height="100%" width="100%" src="images/home/f4.png" alt="//" class="w-auto h-auto mx-auto ">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--========-->
+                                <li class="splide__slide">
+                                    <!--========-->
+                                    <div class="grid gap-4 md:grid-cols-2 grid-cols-1 py-10 container mx-auto sm:px-10">
+                                        <!--========-->
+                                        <div class="text-center md:text-left xl:w-10/12 md:order-1 order-2">
+                                            <!--========-->
+                                            <h1 class="text-2xl lg:text-3xl mb-6 font-playfairdisplaysc text-zinc-700">Kachemak Bay Water Trail</h1>
+                                            <!--========-->
+                                            <p class="text-zinc-600 font-opensans my-5 md:text-base text-sm">The Kachemak Bay Water Trail is a 125-mile route that extends from the Homer Spit, east along Kachemak Bay to the head of the bay, and further along the southern side of the bay to the City of Seldovia. The water route passes by public and private land, diverse habitat from intertidal areas to alpine trails, and spectacular wildlife viewing opportunities.</p>
+                                            <!--========-->
+                                            <div>
+                                                <a class="inline-block font-opensans py-2.5 px-7 rounded duration-500 bg-blue-900 hover:bg-opacity-70 text-white" href="contact.html">Visit Site</a>
+                                            </div>
+                                        </div>
+                                        <!--========-->
+                                        <div class="md:order-2 order-1">
+                                            <img height="100%" width="100%" src="images/home/f3.png" alt="//" class="w-auto h-auto mx-auto ">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--====slider arrows====-->
+                        <div class="splide__arrows flex items-center justify-between self-center absolute top-0 bottom-0 left-0 right-0 lg:-left-5 lg:-right-5">
+                            <!--====slider arrows left====-->
+                            <button class="prev splide__arrow--prev text-zinc-500 hover:text-zinc-700 duration-200 transform rotate-180">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <!--====slider arrows right====-->
+                            <button class="next splide__arrow--next text-zinc-500 hover:text-zinc-700 duration-200">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 004========== -->
+            <section>
+                <!--========-->
+                <div class="container mx-auto xl:px-28 lg:px-16 sm:px-0 px-5 py-10">
+                    <!--====heading====-->
+                    <div class=" relative overflow-hidden flex items-center sm:px-10 px-5 justify-center font-playfairdisplaysc capitalize text-center">
+                        <!--========-->
+                        <div class=" w-24 border-b border-zinc-700"></div>
+                        <!--========-->
+                        <h1 class=" md:text-3xl text-2xl text-zinc-700 sm:px-5 px-3 whitespace-nowrap">Some of Our Clients</h1>
+                        <!--========-->
+                        <div class=" w-24 border-b border-zinc-700"></div>
+                    </div>
+                    <!--====grid====-->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-10 sm:w-3/5  mx-auto lg:w-auto ">
+                        <div class="text-center lg:text-left">
+                            <h1 class="text-2xl lg:text-3xl mb-6 font-playfairdisplaysc text-zinc-700">Building trust since 1997</h1>
+                            <p class="text-zinc-600 font-opensans xl:pr-5">We have been in the web development business for 20 years. We know how important trust and reliability are, and greatly value the trust our clients have in us!</p>
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c1.png" alt="//" class="w-auto h-auto mx-auto ">
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c2.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c3.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c4.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div class=" flex gap-6 flex-col">
+                            <!--========-->
+                            <img height="100%" width="100%" src="images/home/c5.png" alt="//" class="w-auto h-auto mx-auto">                        
+                            <!--========-->
+                            <img height="100%" width="100%" src="images/home/c6.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c7.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c8.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div class=" flex items-center">
+                            <img height="100%" width="100%" src="images/home/c9.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 005========== -->
+            <section class=" bg-zinc-100 border-b">
+                <!--========-->
+                <div class=" grid md:gap-5 gap-8 md:grid-cols-2 grid-cols-1 text-center md:text-left xl:px-28 lg:px-16 sm:px-0 px-5 py-20 container mx-auto">
+                    <!--========-->
+                    <div>
+                        <!--========-->
+                         <div class=" font-playfairdisplaysc xl:text-4xl md:text-3xl text-2xl text-zinc-800 font-medium space-y-2 mb-5">
+                            <h1>Need something specific?</h1>
+                            <h1>We will build it for you!</h1>
+                        </div>
+                        <!--========-->
+                        <div>
+                            <p class=" text-sm md:text-base font-opensans text-zinc-600 leading-loose md:w-full sm:w-3/5 w-4/5 mx-auto">From a custom website for your business, to custom developed web applications, we can do it!</p>
+                        </div>
+                    </div>
+                    <!--========-->
+                    <div class=" font-opensans flex flex-col items-center justify-center text-center">
+                        <!--========-->
+                        <p class=" text-2xl text-zinc-600">Contact us for more information.</p>
+                        <!--========-->
+                        <div class="w-64 border-b border-zinc-400 my-8"></div>
+                        <!--========-->
+                        <div>
+                            <a class=" uppercase py-2.5 px-10 rounded duration-500 bg-blue-900 hover:bg-opacity-70 text-white" href="contact.html">GET A FREE QUOTE</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--====================footer====================-->
+        <footer class=" bg-white">
+            <!--========-->
+            <div class="md:text-base text-sm flex sm:flex-row flex-col items-center sm:justify-between font-opensans container mx-auto xl:px-28 lg:px-16 sm:px-0 px-5 py-10">
+                <!--========-->
+                <div>
+                    <p class="text-gray-500">© 1997-2022 Tundra Technologies</p>
+                </div>
+                <!--========-->
+                <div>
+                    <ul class=" flex items-center space-x-4">
+                        <!--========-->
+                        <li>
+                            <a class=" text-blue-500 hover:opacity-80" href="terms-of-service.html">Terms of Service</a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <a class=" text-blue-500 hover:opacity-80" href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+         <!--====================Custom script====================-->
+        <script>
+            //scrolling effect
+            window.addEventListener('scroll', function(){
+            var scrollPosition = window.pageYOffset;
+            var bgParallax = document.getElementsByClassName('parallax')[0];
+            var limit = bgParallax.offsetTop + bgParallax.offsetHeight;  
+            if (scrollPosition > bgParallax.offsetTop && scrollPosition <= limit){
+                bgParallax.style.backgroundPositionY = (50 + 100*scrollPosition/limit) + '%';   
+            }else{
+                bgParallax.style.backgroundPositionY = '50%';    
+            }
+            });
+
+            //typed js
+           var typed = new Typed('.element1', {
+            strings: ["Creative Web Design <br> Custom Programming"],
+            typeSpeed: 100,
+            showCursor:false,
+            });
+
+            //slider
+            document.addEventListener('DOMContentLoaded', function() {
+                new Splide('#slider1', {
+                    perPage: 1,
+                    type: 'loop',
+                    autoplay:true,
+                    drag:true,
+                    interval:3000,
+                    lazyLoad:true,
+                    classes: {
+                            arrows: 'splide__arrows your-class-arrows',
+                            arrow : 'splide__arrow your-class-arrow',
+                            prev  : 'splide__arrow--prev prev',
+                            next  : 'splide__arrow--next next',
+                    },
+                }).mount();
+            });
+        </script>
+    </body>
+</html>
