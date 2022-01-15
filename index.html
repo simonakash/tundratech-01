@@ -7,16 +7,12 @@
         <!--------->
         <title>Home | Homer Alaska Web Design Tundra Technologies</title>
         <link rel="icon" href="images/logo/favicon.jpg" sizes="32x32">
-        <!-----Tailwind css Js---->
-        <script defer src="js/alpine.min.js"></script>
         <!-----css---->
         <link rel="stylesheet" href="output/tailwind.css">
-        <!-- splide Slider assets -->
+        <!-- splide Slider css -->
         <link rel="stylesheet" href="css/splide.min.css">
-        <script src="js/splide.min.js"></script>
-        <!-- typed js -->
-        <script src="js/typed.js"></script>
     </head>
+    
     <!--====================body====================-->
     <body class=" overflow-x-hidden">
         <!--====================Header====================-->
@@ -98,7 +94,7 @@
             <!-- ==========section 001========== -->
             <section>
                 <!--========-->
-                <div id="parallax" class="parallax h-screen min-h-screen bg-cover  bg-fixed bg-no-repeat" style="background-image: url(images/home/bg1.jpg);">
+                <div id="parallax" style="background-image: url(images/home/bg1.jpg);">
                     <!--========-->
                      <div class=" w-full xl:px-28 sm:px-0 px-5 py-20 h-full bg-black bg-opacity-25">
                          <!--========-->
@@ -466,18 +462,26 @@
                 </div>
             </div>
         </footer>
-         <!--====================Custom script====================-->
+
+
+
+        <!-----alpine Js---->
+        <script defer src="js/alpine.min.js"></script>
+        <!-- jquery -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <!-- parallaxie js -->
+        <script src="js/parallaxie.js"></script>
+        <!-- splide js -->
+         <script src="js/splide.min.js"></script>
+        <!-- typed js -->
+        <script src="js/typed.js"></script>
+
+        <!--====================Custom script====================-->
         <script>
             //scrolling effect
-            window.addEventListener('scroll', function(){
-            var scrollPosition = window.pageYOffset;
-            var bgParallax = document.getElementsByClassName('parallax')[0];
-            var limit = bgParallax.offsetTop + bgParallax.offsetHeight;  
-            if (scrollPosition > bgParallax.offsetTop && scrollPosition <= limit){
-                bgParallax.style.backgroundPositionY = (50 + 100*scrollPosition/limit) + '%';   
-            }else{
-                bgParallax.style.backgroundPositionY = '50%';    
-            }
+            $('#parallax').parallaxie({
+                speed: 0.5,
+                offset: 0,
             });
 
             //typed js
