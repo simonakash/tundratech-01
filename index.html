@@ -7,12 +7,16 @@
         <!--------->
         <title>Home | Homer Alaska Web Design Tundra Technologies</title>
         <link rel="icon" href="images/logo/favicon.jpg" sizes="32x32">
-        <!-----css---->
-        <link rel="stylesheet" href="output/tailwind.css">
+
+        
+        <!-----wow js css---->
+        <link rel="stylesheet" href="css/animate.min.css">
         <!-- splide Slider css -->
         <link rel="stylesheet" href="css/splide.min.css">
+        <!-----Tailwind css---->
+        <link rel="stylesheet" href="output/tailwind.css">
     </head>
-    
+
     <!--====================body====================-->
     <body class=" overflow-x-hidden">
         <!--====================Header====================-->
@@ -94,7 +98,7 @@
             <!-- ==========section 001========== -->
             <section>
                 <!--========-->
-                <div id="parallax" style="background-image: url(images/home/bg1.jpg);">
+                <div id="parallax" class="h-screen" style="background: url('images/home/bg1.jpg');background-size: cover;background-position: center 0px; background-repeat: no-repeat;">
                     <!--========-->
                      <div class=" w-full xl:px-28 sm:px-0 px-5 py-20 h-full bg-black bg-opacity-25">
                          <!--========-->
@@ -234,7 +238,7 @@
                 <!--========-->
                 <div class=" py-10 xl:px-28 lg:px-16 sm:px-0 px-5 bg-white bg-opacity-90 relative duration-700">
                     <!--====heading====-->
-                    <div class=" overflow-hidden flex items-center sm:px-10 px-5 justify-center font-playfairdisplaysc capitalize text-center">
+                    <div class="wow animate__fadeInLeft overflow-hidden flex items-center sm:px-10 px-5 justify-center font-playfairdisplaysc capitalize text-center" data-wow-offset="10" data-wow-duration="1s">
                         <!--========-->
                         <div class=" w-24 border-b border-zinc-700"></div>
                         <!--========-->
@@ -357,7 +361,7 @@
                 <!--========-->
                 <div class="container mx-auto xl:px-28 lg:px-16 sm:px-0 px-5 py-10">
                     <!--====heading====-->
-                    <div class=" relative overflow-hidden flex items-center sm:px-10 px-5 justify-center font-playfairdisplaysc capitalize text-center">
+                    <div class="wow animate__fadeInRight relative overflow-hidden flex items-center sm:px-10 px-5 justify-center font-playfairdisplaysc capitalize text-center" data-wow-offset="10" data-wow-duration="1s">
                         <!--========-->
                         <div class=" w-24 border-b border-zinc-700"></div>
                         <!--========-->
@@ -463,14 +467,12 @@
             </div>
         </footer>
 
-
-
         <!-----alpine Js---->
         <script defer src="js/alpine.min.js"></script>
-        <!-- jquery -->
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <!-- parallaxie js -->
-        <script src="js/parallaxie.js"></script>
+        <!-- Jarallax -->
+       <script src="js/"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
         <!-- splide js -->
          <script src="js/splide.min.js"></script>
         <!-- typed js -->
@@ -478,10 +480,14 @@
 
         <!--====================Custom script====================-->
         <script>
-            //scrolling effect
-            $('#parallax').parallaxie({
-                speed: 0.5,
-                offset: 0,
+            //wow js 
+            new WOW().init();
+
+            //parallax effect
+           let parallax = document.getElementById('parallax');
+            window.addEventListener('scroll', () => {
+                let { scrollY } = window;
+                parallax.style.backgroundPositionY = 0.4* scrollY + 'px';
             });
 
             //typed js
