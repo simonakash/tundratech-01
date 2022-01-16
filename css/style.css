@@ -15,7 +15,12 @@
     font-family: 'Lato',sans-serif !important;
 }
 
-
+/*---------*/
+.text-shadow-base{
+    text-shadow: 1px 1px 5px rgb(0 0 0 / 40%),
+    1px 1px 5px rgb(0 0 0 / 40%),
+    1px 1px 9px rgb(0 0 0 / 40%);
+}
 
 @tailwind base;
 @tailwind components;

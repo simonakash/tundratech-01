@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+    <!--====================head====================-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--------->
+        <title>About Us | Homer Alaska Web Design Tundra Technologies</title>
+        <link rel="icon" href="images/logo/favicon.jpg" sizes="32x32">
+
+        <!-----wow js css---->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <!-----Tailwind css---->
+        <link rel="stylesheet" href="output/tailwind.css">
+    </head>
+
+    <!--====================body====================-->
+    <body class=" overflow-x-hidden">
+        <!--====================Header====================-->
+        <header>
+            <div class="font-opensans bg-white" x-data="{humberger: false}" >
+                <!--========-->
+                <nav class=" flex items-center justify-between py-4 container mx-auto xl:px-28 sm:px-0 px-5 lg:px-16">
+                    <!--====logo====-->
+                    <a class=" wow animate__fadeInLeft" href="/" data-wow-offset="0" data-wow-duration="1s">
+                        <img height="100%" width="100%" src="images/logo/logo1.png" class="h-full w-full" alt="//" />
+                    </a>
+                    <!--====Mobile menu button====-->
+                    <div class="lg:hidden mx-4 cursor-pointer" @click="humberger=!humberger">
+                         <!--========-->
+                       <svg x-show="!humberger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                         <!--========-->
+                        <svg x-show="humberger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div> 
+                    <!--========-->
+                    <ul class="hidden lg:flex space-x-3">
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="index.html">Home</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 opacity-80 p-2.5" href="about.html">About Us</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="services.html">Services</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--====Mobile menu====-->
+                <ul x-show="humberger" :class="{'h-0 lg:h-auto overflow-hidden' : !humberger}" class="mt-4 lg:mt-0 w-full lg:divide-y-0 text-sm lg:space-y-0 lg:w-auto lg:space-x-4 mb-4 bg-white lg:bg-transparent text-zinc-800 lg:relative top-auto lg:flex flex-col lg:flex-row font-opensans">
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--====================main====================-->
+        <main>
+            <!-- ==========section 001========== -->
+            <section class=" text-center pt-6 sm:py-20 py-10 px-5" style="background: url('images/home/bg2.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <!--====heading====-->
+                <div class="mb-2 relative overflow-hidden flex items-center sm:px-10 px-5 justify-center font-playfairdisplaysc capitalize text-center">
+                    <!--========-->
+                    <div class=" w-24 border-b border-white"></div>
+                    <!--========-->
+                    <h1 class=" md:text-5.5xl text-4.5xl text-white sm:px-5 px-3 sm:whitespace-nowrap md:whitespace-normal lg:whitespace-nowrap text-shadow-base leading-normal">About Tundra Technologies</h1>
+                    <!--========-->
+                    <div class=" w-24 border-b border-white"></div>
+                </div>
+                 <!--====sub heading====-->
+                 <div>
+                     <p class="text-2.5xl text-white font-opensans text-shadow-base">Homer Alaska Web Design</p>
+                 </div>
+            </section>
+            <!-- ==========section 002========== -->
+            <section>
+                <!--========-->
+                <div class="grid md:gap-7 gap-16 md:grid-cols-2 grid-cols-1 text-left xl:px-28 lg:px-16 sm:px-0 px-5 container mx-auto">
+                    <!--========-->
+                    <div class="space-y-6 py-5 text-sm lg:text-base text-zinc-600 font-opensans">
+                        <!--========-->
+                        <p>Tundra Technologies is a small business that prides itself in customer service and support.  We take great personal satisfaction in turning out high quality work at a good price.</p>
+                        <!--========-->
+                        <p>We believe that customer support is extremely important in today's world of large, impersonal corporations.</p>
+                        <!--========-->
+                        <p>Being a small business ourselves, we understand what a struggle it can be starting out, and will go the extra mile to help make this as painless as possible for you.  Whether you are looking for an informational site for your B&B, a basic e-commerce solution for your small business, a full fledged web application, or a small custom script, we can do the job.</p>
+                        <!--========-->
+                        <p>We have been in the business of building websites for 20 years, and are in this business for the long haul.  We understand how important it is for your web developer to be there when you need them, so we pride ourselves on being available.</p>
+                    </div>
+                    <!--========-->
+                    <div class=" hidden md:block">
+                        <img height="100%" width="100%" src="images/about/a1.jpg" class="w-full h-full object-cover" alt="//" />
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 003========== -->
+            <section class=" bg-teal-50">
+                <!--====Heading====-->
+                <div class=" text-center pt-10">
+                    <!--========-->
+                    <h1 class="md:text-3xl text-2xl text-zinc-600 font-playfairdisplaysc">Why Choose Tundra Technologies?</h1>
+                    <!--========-->
+                    <div class="pt-10 border-b-2 border-yellow-700 md:w-28 w-12 mx-auto"></div>
+                </div>
+                <!--========-->
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-10 xl:px-28 lg:px-16 sm:px-0 px-5 container mx-auto md:w-auto sm:w-7/12 py-10">
+                    <!--========-->
+                    <div class=" flex">
+                        <!--========-->
+                        <div class=" text-zinc-500 mr-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <!--========-->
+                        <div>
+                            <h1 class="text-base md:text-lg font-playfairdisplaysc text-zinc-700">CUSTOM SITE DESIGNS</h1>
+                            <p class="md:text-base text-sm font-opensans text-zinc-500 pt-2.5">We team with professional graphic artists experienced with designing for the web to give your webiste that extra 'wow' needed to make your website stand out in todays internet.</p>
+                        </div>
+                    </div>
+                    <!--========-->
+                    <div class=" flex">
+                        <!--========-->
+                        <div class=" text-zinc-500 mr-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <!--========-->
+                        <div>
+                            <h1 class="text-base md:text-lg font-playfairdisplaysc text-zinc-700">SEARCH ENGINE OPTIMIZATION</h1>
+                            <p class="md:text-base text-sm font-opensans text-zinc-500 pt-2.5">When we build you site for you, we make sure and make it search engine friendly, and include whatever keywords and phrases you suggest to help make you rank higher in the search engines.</p>
+                        </div>
+                    </div>
+                    <!--========-->
+                    <div class=" flex">
+                        <!--========-->
+                        <div class=" text-zinc-500 mr-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <!--========-->
+                        <div>
+                            <h1 class="text-base md:text-lg font-playfairdisplaysc text-zinc-700">CUSTOM PROGRAMMING</h1>
+                            <p class="md:text-base text-sm font-opensans text-zinc-500 pt-2.5">If you are need a custom wordpress plugin, or are looking for a custom developed web application, our many years experience in web technologies will allow us to build you exactly what you need.</p>
+                        </div>
+                    </div>
+                    <!--========-->
+                    <div class=" flex">
+                        <!--========-->
+                        <div class=" text-zinc-500 mr-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <!--========-->
+                        <div>
+                            <h1 class="text-base md:text-lg font-playfairdisplaysc text-zinc-700">TIMELY SUPPORT</h1>
+                            <p class="md:text-base text-sm font-opensans text-zinc-500 pt-2.5">We believe that customer support is extremely important in today's world of large, impersonal corporations, and we strive to go the extra mile to make sure you are happy. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 004========== -->
+            <section>
+                <!--========-->
+                <div class="container mx-auto xl:px-28 lg:px-16 sm:px-0 px-5 py-10">
+                    <!--====heading====-->
+                    <div class="wow animate__fadeInRight relative overflow-hidden flex items-center sm:px-10 px-5 justify-center font-playfairdisplaysc capitalize text-center" data-wow-offset="10" data-wow-duration="1s">
+                        <!--========-->
+                        <div class=" w-24 border-b border-zinc-700"></div>
+                        <!--========-->
+                        <h1 class=" md:text-3xl text-2xl text-zinc-700 sm:px-5 px-3 whitespace-nowrap">Some of Our Clients</h1>
+                        <!--========-->
+                        <div class=" w-24 border-b border-zinc-700"></div>
+                    </div>
+                    <!--====grid====-->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-10 sm:w-3/5  mx-auto lg:w-auto ">
+                        <div class="text-center lg:text-left">
+                            <h1 class="text-2xl lg:text-3xl mb-6 font-playfairdisplaysc text-zinc-700">Building trust since 1997</h1>
+                            <p class="text-zinc-600 font-opensans xl:pr-5 md:text-base text-sm">We have been in the web development business for 20 years. We know how important trust and reliability are, and greatly value the trust our clients have in us!</p>
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c1.png" alt="//" class="w-auto h-auto mx-auto ">
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c2.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c3.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c4.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div class=" flex gap-6 flex-col">
+                            <!--========-->
+                            <img height="100%" width="100%" src="images/home/c5.png" alt="//" class="w-auto h-auto mx-auto">                        
+                            <!--========-->
+                            <img height="100%" width="100%" src="images/home/c6.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c7.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div>
+                            <img height="100%" width="100%" src="images/home/c8.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                        <!--========-->
+                        <div class=" flex items-center">
+                            <img height="100%" width="100%" src="images/home/c9.png" alt="//" class="w-auto h-auto mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--====================footer====================-->
+        <footer class=" bg-white border-t md:mt-20">
+            <!--========-->
+            <div class="md:text-base text-sm flex sm:flex-row flex-col items-center sm:justify-between font-opensans container mx-auto xl:px-28 lg:px-16 sm:px-0 px-5 py-10">
+                <!--========-->
+                <div>
+                    <p class="text-gray-500">© 1997-2022 Tundra Technologies</p>
+                </div>
+                <!--========-->
+                <div>
+                    <ul class=" flex items-center space-x-4">
+                        <!--========-->
+                        <li>
+                            <a class=" text-blue-500 hover:opacity-80" href="terms-of-service.html">Terms of Service</a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <a class=" text-blue-500 hover:opacity-80" href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-----alpine Js---->
+        <script defer src="js/alpine.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!--====================Custom script====================-->
+       <script>
+           //wow js 
+            new WOW().init();
+       </script>
+    </body>
+</html>
