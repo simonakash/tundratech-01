@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./index.html","./about.html"],
+  content: ["./index.html","./about.html","./services.html"],
   theme: {
     extend: {
       fontSize: {

@@ -20,7 +20,7 @@
     <!--====================body====================-->
     <body class=" overflow-x-hidden">
         <!--====================Header====================-->
-        <header class=" absolute left-0 right-0">
+        <header class=" absolute left-0 right-0 z-50">
             <div class="font-opensans bg-transparent" x-data="{humberger: false}">
                 <!--========-->
                 <nav class=" flex items-center md:justify-end justify-center py-3 container mx-auto xl:px-28 sm:px-0 px-5 lg:px-16">
@@ -98,7 +98,7 @@
             <!-- ==========section 001========== -->
             <section>
                 <!--========-->
-                <div id="parallax" class="h-screen" style="background: url('images/home/bg1.jpg');background-size: cover;background-position: center 0px; background-repeat: no-repeat;">
+                <div id="parallax" class="h-screen bg-center bg-no-repeat bg-cover" style="background-image: url('images/home/bg1.jpg');">
                     <!--========-->
                      <div class=" w-full xl:px-28 sm:px-0 px-5 py-20 h-full bg-black bg-opacity-25">
                          <!--========-->
@@ -145,9 +145,10 @@
                             <p class=" text-xl text-zinc-700 font-opensans mb-6">Designing and Building high quality, professionally designed websites in Alaska, and around the country for 20 years</p>
                             <!--========-->
                             <p class=" text-base text-zinc-500 font-opensans mb-10">Looking for a professionally designed site for your small business, vacation rental, B&B, or non-profit organization?  We have extensive experience creating that <span class=" font-bold">eye-grabbing design</span> to bring in visitors.</p>
+                            <!--========-->
                             <div>
-                            <a class="font-opensans uppercase py-2.5 px-10 rounded duration-500 bg-blue-900 hover:bg-opacity-70 text-white" href="services.html">OUR SERVICES</a>
-                        </div>
+                                <a class="font-opensans uppercase py-2.5 px-10 rounded duration-500 bg-blue-900 hover:bg-opacity-70 text-white" href="services.html">OUR SERVICES</a>
+                            </div>
                         </div>
                     </div>
                     <!--========-->
@@ -475,6 +476,8 @@
          <script src="js/splide.min.js"></script>
         <!-- typed js -->
         <script src="js/typed.js"></script>
+         <!-- Jarallax -->
+        <script src="js/jarallax.min.js"></script>
 
         <!--====================Custom script====================-->
         <script>
@@ -482,14 +485,13 @@
             new WOW().init();
 
             //parallax effect
-           let parallax = document.getElementById('parallax');
-            window.addEventListener('scroll', () => {
-                let { scrollY } = window;
-                parallax.style.backgroundPositionY = 0.4* scrollY + 'px';
+           //parallax effect
+            jarallax(document.querySelectorAll('#parallax'), {
+                speed: 0.4,
+                backgroundPosition: '220% 220%'
             });
-
             //typed js
-           var typed = new Typed('.element1', {
+            var typed = new Typed('.element1', {
             strings: ["Creative Web Design <br> Custom Programming"],
             typeSpeed: 100,
             showCursor:false,
