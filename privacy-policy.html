@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <!--====================head====================-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--------->
+        <title>Privacy Policy | Homer Alaska Web Design Tundra Technologies</title>
+        <link rel="icon" href="images/logo/favicon.jpg" sizes="32x32">
+
+        <!-----wow js css---->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <!-----Tailwind css---->
+        <link rel="stylesheet" href="output/tailwind.css">
+    </head>
+
+    <!--====================body====================-->
+    <body class=" overflow-x-hidden">
+        <!--====================Header====================-->
+        <header>
+            <div class="font-opensans bg-white" x-data="{humberger: false}" >
+                <!--========-->
+                <nav class=" flex items-center justify-between py-4 container mx-auto xl:px-28 sm:px-0 px-5 lg:px-16">
+                    <!--====logo====-->
+                    <a class=" wow animate__fadeInLeft" href="/" data-wow-offset="0" data-wow-duration="1s">
+                        <img height="100%" width="100%" src="images/logo/logo1.png" class="h-full w-full" alt="//" />
+                    </a>
+                    <!--====Mobile menu button====-->
+                    <div class="lg:hidden mx-4 cursor-pointer" @click="humberger=!humberger">
+                         <!--========-->
+                       <svg x-show="!humberger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                         <!--========-->
+                        <svg x-show="humberger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div> 
+                    <!--========-->
+                    <ul class="hidden lg:flex space-x-3">
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="index.html">Home</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="about.html">About Us</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="services.html">Services</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 opacity-80 p-2.5" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--====Mobile menu====-->
+                <ul x-show="humberger" :class="{'h-0 lg:h-auto overflow-hidden' : !humberger}" class="mt-4 lg:mt-0 w-full lg:divide-y-0 text-sm lg:space-y-0 lg:w-auto lg:space-x-4 mb-4 bg-white lg:bg-transparent text-zinc-800 lg:relative top-auto lg:flex flex-col lg:flex-row font-opensans">
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--====================main====================-->
+        <main>
+            <!-- ==========section 001========== -->
+            <section class=" xl:px-28 lg:px-16 sm:px-0 px-5 " style="background: url('images/services/s1.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <!--========-->
+                <div class="text-center pt-28 pb-16">
+                    <!--====heading====-->
+                    <div class="mb-2 relative overflow-hidden flex items-center sm:px-10 px-5 justify-center font-playfairdisplaysc capitalize text-center">
+                        <!--========-->
+                        <div class=" w-24 border-b border-white"></div>
+                        <!--========-->
+                        <h1 class=" md:text-5.5xl text-4.5xl text-white sm:px-5 px-3 text-shadow-base leading-normal whitespace-nowrap">Privacy Policy</h1>
+                        <!--========-->
+                        <div class=" w-24 border-b border-white"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 002========== -->
+            <section>
+                <!--========-->
+                <div class="xl:px-28 lg:px-16 sm:px-0 px-5 container mx-auto py-10">
+                    <!--========-->
+                    <h1 class=" font-playfairdisplaysc md:text-3xl text-2xl text-zinc-800 mb-6">Privacy Statement</h1>
+                    <!--========-->
+                    <div class=" font-opensans text-sm lg:text-base space-y-6 text-zinc-500">
+                        <!--========-->
+                        <p>In an effort to protect our clients' and site visitors privacy and rights, Tundra Technologies&nbsp; has established a Privacy Policy which explains what information we gather on visitors and what we do with information that we gather.</p>
+                        <!--========-->
+                        <p>We advise all visitors and clients to read and understand our privacy policy, and to check it periodically for any updates or revisions. If you have any questions about the contents of our statement, please feel free to contact us by e-mailing: support@tundratech.net.</p>
+                        <!--========-->
+                        <p>This Privacy Policy governs the manner in which Tundra Technologies&nbsp; collects, uses, maintains and discloses information collected from users of this Web site (each, a "User").</p>
+                        <!--========-->
+                        <p><strong>Privacy</strong><br>Users' privacy is very important to Tundra Technologies. Tundra Technologies&nbsp; is committed to safeguarding the information Users entrust to Tundra Technologies.</p>
+                        <!--========-->
+                        <p><strong>The Information We Collect</strong><br>Tundra Technologies may collect personally identifiable information from Users in a variety of ways, including through online forms for ordering products and services, and other instances where Users are invited to volunteer such information. Tundra Technologies may also collect information about how Users use our Web site, for example, by tracking the number of unique views received by the pages of the Web site or the domains from which Users originate. We may use "cookies" to track how Users use our Web site. A cookie is a piece of software that a Web server can store on the Users’ PC and use to identify the User should they visit the Web site again. While not all of the information that we collect from Users is personally identifiable, it may be associated with personally identifiable information that Users provide us through our Web site.</p>
+                        <!--========-->
+                        <p><strong>How We Use Information</strong><br>Tundra Technologies&nbsp; may use personally identifiable information collected through our Web site to contact Users regarding products and services offered by Tundra Technologies and its trusted affiliates, independent contractors and business partners, and otherwise to enhance Users' experience with Tundra Technologies and such affiliates, independent contractors and business partners. Tundra Technologies may also use information collected through our Web site for research regarding the effectiveness of the Web site and the marketing, advertising and sales efforts of Tundra Technologies, its trusted affiliates, independent contractors and business partners. At no time will Tundra Technologies' database of users ever be sold to any entity for the purpose of marketing or mailing lists.</p>
+                        <!--========-->
+                        <p><strong>Disclosure of Information</strong><br>Tundra Technologies may disclose information collected from Users to trusted affiliates, independent contractors and business partners who will use the information for the purposes outlined above. We may also disclose aggregate, anonymous data based on information collected from Users to investors and potential partners. Finally, we may transfer information collected from Users in connection with a sale of Tundra Technologies' business.</p>
+                        <!--========-->
+                        <p><strong>Maintenance of Information</strong><br>Information about Users that is maintained on our systems is protected using industry standard security measures. However, we cannot guarantee that the information submitted to, maintained on, or transmitted from our systems will be completely secure.</p>
+                        <!--========-->
+                        <p><strong>Questions</strong><br>Users may direct questions concerning this statement by e-mail to: support@tundratech.net. Users may elect not to receive solicitations from Tundra Technologies Hosting or from trusted affiliates, independent contractors and business partners by letting us know.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--====================footer====================-->
+        <footer class=" bg-white border-t">
+            <!--========-->
+            <div class="md:text-base text-sm flex sm:flex-row flex-col items-center sm:justify-between font-opensans container mx-auto xl:px-28 lg:px-16 sm:px-0 px-5 py-10">
+                <!--========-->
+                <div>
+                    <p class="text-gray-500">© 1997-2022 Tundra Technologies</p>
+                </div>
+                <!--========-->
+                <div>
+                    <ul class=" flex items-center space-x-4">
+                        <!--========-->
+                        <li>
+                            <a class=" text-blue-500 hover:opacity-80" href="terms-of-service.html">Terms of Service</a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <a class=" text-blue-500 hover:opacity-80" href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-----alpine Js---->
+        <script defer src="js/alpine.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+
+        <!--====================Custom script====================-->
+       <script>
+           //wow js 
+            new WOW().init();
+            
+       </script>
+    </body>
+</html>

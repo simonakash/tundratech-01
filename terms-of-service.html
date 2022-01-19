@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+    <!--====================head====================-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--------->
+        <title>Terms of Service | Homer Alaska Web Design Tundra Technologies</title>
+        <link rel="icon" href="images/logo/favicon.jpg" sizes="32x32">
+
+        <!-----wow js css---->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <!-----Tailwind css---->
+        <link rel="stylesheet" href="output/tailwind.css">
+    </head>
+
+    <!--====================body====================-->
+    <body class=" overflow-x-hidden">
+        <!--====================Header====================-->
+        <header>
+            <div class="font-opensans bg-white" x-data="{humberger: false}" >
+                <!--========-->
+                <nav class=" flex items-center justify-between py-4 container mx-auto xl:px-28 sm:px-0 px-5 lg:px-16">
+                    <!--====logo====-->
+                    <a class=" wow animate__fadeInLeft" href="/" data-wow-offset="0" data-wow-duration="1s">
+                        <img height="100%" width="100%" src="images/logo/logo1.png" class="h-full w-full" alt="//" />
+                    </a>
+                    <!--====Mobile menu button====-->
+                    <div class="lg:hidden mx-4 cursor-pointer" @click="humberger=!humberger">
+                         <!--========-->
+                       <svg x-show="!humberger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                         <!--========-->
+                        <svg x-show="humberger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div> 
+                    <!--========-->
+                    <ul class="hidden lg:flex space-x-3">
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="index.html">Home</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="about.html">About Us</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="services.html">Services</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 hover:opacity-80 p-2.5" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <!---->
+                        <li>
+                            <a class="text-zinc-700 opacity-80 p-2.5" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--====Mobile menu====-->
+                <ul x-show="humberger" :class="{'h-0 lg:h-auto overflow-hidden' : !humberger}" class="mt-4 lg:mt-0 w-full lg:divide-y-0 text-sm lg:space-y-0 lg:w-auto lg:space-x-4 mb-4 bg-white lg:bg-transparent text-zinc-800 lg:relative top-auto lg:flex flex-col lg:flex-row font-opensans">
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <!--========-->
+                    <li class="py-3 px-4 bg-zinc-100 lg:bg-transparent border-b lg:border-none">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--====================main====================-->
+        <main>
+            <!-- ==========section 001========== -->
+            <section class=" xl:px-28 lg:px-16 sm:px-0 px-5 " style="background: url('images/services/s1.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <!--========-->
+                <div class="text-center pt-28 pb-16">
+                    <!--====heading====-->
+                    <div class="mb-2 relative overflow-hidden flex items-center sm:px-10 px-5 justify-center font-playfairdisplaysc capitalize text-center">
+                        <!--========-->
+                        <div class=" w-24 border-b border-white"></div>
+                        <!--========-->
+                        <h1 class=" md:text-5.5xl text-4.5xl text-white sm:px-5 px-3 text-shadow-base leading-normal whitespace-nowrap">Terms of Service</h1>
+                        <!--========-->
+                        <div class=" w-24 border-b border-white"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========section 002========== -->
+            <section>
+                <!--========-->
+                <div class="xl:px-28 lg:px-16 sm:px-0 px-5 container mx-auto py-10">
+                    <!--========-->
+                    <h1 class=" font-playfairdisplaysc md:text-3xl text-2xl text-zinc-800 mb-6">Terms of Service, and Acceptable Use Policy</h1>
+                    <!--========-->
+                    <div class=" font-opensans text-sm lg:text-base space-y-6 text-zinc-500">
+                        <!--========-->
+                        <p><strong>IMPORTANT NOTICE:</strong> All Payments To Tundra Technologies are Non-Refundable unless they fall under the 30 Day Money Back Guarantee!<br>Tundra Technologies ("The Company") agrees to furnish services to the client, subject to the following TOS (Terms of Service).<br>
+                            Right to Refuse Service: Tundra Technologies reserves the right to refuse it's services to anyone for any reason. This policy is enforced to ensure a professional and secure environment for all customers on our systems.<br>
+                            Use of Tundra Technologies Service constitutes acceptance and agreement to Tundra Technologies's TOS (Terms of Service) and AUP (Acceptable Use Policy)<br>
+                            All provisions of this contract are subject to the TOS (Terms of Service) of Tundra Technologies, AUP (Acceptable Use Policy). The AUP may be changed from time to time at the discretion of the Company. Client understands that change to the AUP by the Company shall not be grounds for early contract termination or non-payment.
+                        </p>
+                        <!--========-->
+                        <p><strong>Disclosure to Law Enforcement:</strong> The AUP specifically prohibits the use of our service for illegal activities. Therefore, Client agrees that the Company may disclose any and all Client information including assigned IP numbers, account history, account use, etc. to any law enforcement agent who makes a written request without further consent or notification to the Client. In addition Tundra Technologies shall have the right to terminate all service set forth in this Agreement.<br>
+                            Service Rates: Client acknowledges that the nature of the service furnished and the initial rates and charges have been communicated to Client. Client is aware that the Company may prospectively change the specified rates and charges from time to time. The promotional offer is contingent upon Company achieving and maintaining its cost of service goals including but not limited to rates charged to company by its suppliers.<br>
+                            Payment: Establishment of this service is dependent upon receipt by the Company of payment of stated charges. Subsequent payments are due on a reoccurring date that coincides with the date of signup.
+                        </p>
+                        <!--========-->
+                        <p><strong>Temporary access to account:</strong><br>
+                            The customer is allowed to use the IP/~username/ (for temporary access to site, prior to domain name propagation) for fourteen days after the account setup procedure. Following this time period, it will be disabled and a domain name will be required to access the account.
+                        </p>
+                        <!--========-->
+                        <p><strong>Declined and Late Payment Fees:</strong> Credit cards that are declined for any reason are subject to a $10.00 declination fee. Service will be interrupted on accounts that reach 5 days past due. Service interrupted for nonpayment is subject to a $10 reconnect charge for virtual and reseller accounts and a $200 reconnection fee for dedicated servers. Accounts not paid by due date are subject to a $20.00 late fee. Accounts that are not collectable by Tundra Technologies will be turned over to an outside collection agency for collection. If your account is turned over for collection, you agree to pay Tundra Technologies a "Processing and Collection" Fee of not less than $50 and not more than $150. If you desire to cancel your account, please follow the proper procedure to do this as outlined in this TOS in the Account Cancellation section.</p>
+                        <!--========-->
+                        <p><strong>Account Deletion:</strong> Accounts not paid in full within 30 days of the due date will be terminated. All data in the account will be lost. Tundra Technologies is not responsible for any loss of data or damages due to this loss of data.</p>
+                        <!--========-->
+                        <p><strong>Refund and Disputes:</strong> All payments after the initial 30 days of service to Tundra Technologies are non-refundable. This includes the one time setup fee and subsequent charges regardless of usage. All overcharges or billing disputes must be reported within 60 days of the time the dispute occurred. If you dispute a charge to your credit card issuer that, in Tundra Technologies's sole discretion is a valid charge under the provisions of the TOS and/or AUP, you agree to pay Tundra Technologies an "Administrative Fee" of not less than $50 and not more than $150.</p>
+                        <!--========-->
+                        <p><strong>Failure to Pay:</strong> The Company may temporarily deny service or terminate this Agreement upon the failure of Client to pay charges when due. Such termination or denial will not relieve Client of responsibility for the payment of all accrued charges, plus reasonable interest and any collection fees.<br>
+                            Client acknowledges that the service provided is of such a nature that service can be interrupted for many reasons other than the negligence of the company and that damages resulting from any interruption of service are difficult to ascertain. Therefore, Client agrees that the company shall not be liable for any damages arising from such causes beyond the direct and exclusive control of the company. Client further acknowledges that the company's liability for its own negligence may not in any event exceed an amount equivalent to charges payable by Client for services during the period damages occurred. In no event shall the company be liable for any special or consequential damages, loss or injury.
+                        </p>
+                        <!--========-->
+                        <p><strong>Support Boundaries:</strong> Tundra Technologies provides technical support to our Clients. We limit our technical support to our area of expertise. The following is our guidelines when providing support: Tundra Technologies provides support related to your server or functioning. Tundra Technologies does not offer tech support for application specific issues such as CGI, JavaScript, PHP or ASP programming, html or any other such issue. Tundra Technologies does not provide technical support for YOUR Clients. We encourage you to click the support link above.&nbsp;Any request of technical support warrants the possibility of being charge a system administration fee if the request related to Operating System functionality, software application functionality, customer installed software/scripts, or Control Panel functionality. If a staff member of Tundra Technologies is required to login to your server to provide support, system administration fees can be applied to your account. Charges are applied at an hourly rate and applied to the next billing cycle.</p>
+                        <!--========-->
+                        <p><strong>SPAM and Unsolicited Commercial Email (UCE):</strong> Tundra Technologies takes a zero tolerance approach to the sending of Unsolicited Commercial Email (UCE) or SPAM over our network. Very simply this means that Clients of Tundra Technologies may not use or permit others to use our network to transact in UCE. Clients of Tundra Technologies may not host, or permit hosting of, sites or information that is advertised by UCE from other networks. Violations of this policy carry severe penalties, including termination of service.<br>
+                            Violation of Tundra Technologies's SPAM policy will result in severe penalties. Upon notification of an alleged violation of our SPAM policy, Tundra Technologies will initiate an immediate investigation (within 48 hours of notification). During the investigation, Tundra Technologies may restrict customer access to the network to prevent further violations. If a customer is found to be in violation of our SPAM policy, Tundra Technologies may, at its sole discretion, restrict, suspend or terminate customer's account. Further, Tundra Technologies reserves the right to pursue civil remedies for any costs associated with the investigation of a substantiated policy violation. Tundra Technologies will notify law enforcement officials if the violation is believed to be a criminal offense.<br>
+                            First violations of this policy will result in an "Administrative Fee" of $250 and your account will be reviewed for possible immediate termination. A second violation will result in an "Administrative Fee" of $500 and immediate termination of your account. Users who violate this policy agree that in addition to these "Administrative" penalties, they will pay "Research Fees" not to exceed $150 per hour that Tundra Technologies personnel must spend to investigate the matter. PLEASE, DO NOT SPAM from your account.<br>
+                            As our Clients are ultimately responsible for the actions of their clients over the Tundra Technologies network, it is advisable that Clients develop a similar, or stricter, policy for their clients.
+                        </p>
+                        <!--========-->
+                        <p><strong>BULK Email :</strong> Tundra Technologies takes a zero tolerance approach to the sending of BULK email over our network. Very simply this means that Clients of Tundra Technologies may not use or permit others to use our network to transact in BULK emails.&nbsp; This includes sending of solicited bulk email in excess of 100/hour, as this can impact other users on the same server.&nbsp; Tundra Technologies requires users to use a third party service for the sending of their BULK email (or e-newsletters).&nbsp; Such services like MailChimp, and ConstantContact are recommended.<br>
+                            Violation of Tundra Technologies's BULK EMAIL policy will result in severe penalties. Upon notification of an alleged violation of our SPAM policy, Tundra Technologies will initiate an immediate investigation (within 48 hours of notification). During the investigation, Tundra Technologies may restrict customer access to the network to prevent further violations. If a customer is found to be in violation of our SPAM policy, Tundra Technologies may, at its sole discretion, restrict, suspend or terminate customer's account. Further, Tundra Technologies reserves the right to pursue civil remedies for any costs associated with the investigation of a substantiated policy violation. Tundra Technologies will notify law enforcement officials if the violation is believed to be a criminal offense.
+                        </p>
+                        <!--========-->
+                        <h1 class="text-2xl">Domains</h1>
+                        <!--========-->
+                        <p><strong>Registration Data.</strong><br>
+                            When you register or transfer a domain name, you are required to provide us with certain information. This information includes:<br>
+                            Your full name, postal address, e-mail address, voice telephone number, and fax number if available; The name of an authorized person for contact purposes in the case of a registrant that is an organization, association, or corporation; The IP addresses of the primary nameserver and any secondary nameserver(s) for the TLD name; The corresponding names of those nameservers; The full name, postal address, e-mail address, voice telephone number, and fax number if available of the technical contact for the TLD name; The full name, postal address, e-mail address, voice telephone number, and fax number if available of the administrative contact for the TLD name; The name, postal address, e-mail address, voice telephone number, and fax number if available of the billing contact for the TLD name; and Any remark concerning the registered TLD name that should appear in the WHOIS directory.<br>
+                            You agree to update this information to keep it current, complete and accurate. You also agree and understand that the foregoing registration data will be publicly available and accessible on the WHOIS directory as required by ICANN/Registry Policy and may be sold in bulk in accordance with the ICANN Agreement.<br>
+                            Inaccurate or Unreliable Data.<br>
+                            If member deliberately provides inaccurate or unreliable information, or fails to promptly update necessary information, or fails to respond to our email inquiries within five calendar days, such<br>
+                            actions shall constitute a breach of this Agreement.
+                        </p>
+                        <!--========-->
+                        <p><strong>Network</strong></p>
+                        <!--========-->
+                        <p><strong>IP Address Ownership:</strong> If Tundra Technologies assigns Customer an Internet Protocol address for Customer's use, the right to use that Internet Protocol address shall belong only to Tundra Technologies, and Customer shall have no right to use that Internet Protocol address except as permitted by Tundra Technologies in its sole discretion in connection with the Services, during the term of this Agreement. Tundra Technologies shall maintain and control ownership of all Internet Protocol numbers and addresses that may be assigned to Customer by Tundra Technologies, and Tundra Technologies reserves the right to change or remove any and all such Internet Protocol numbers and addresses, in its sole and absolute discretion. Our allocation of IP addresses is limited by ARIN's new policies. These new policies state that use of IP addresses for IP based virtual hosts will not be accepted as justification for new IP addresses. What this means to you is that you MUST use name-based hosting where possible. We will periodically review IP address usage, and if we find that clients are using IP addresses where name-based hosting could be used, we will revoke authorization to use those IP addresses that could be used with name-based hosting.</p>
+                        <!--========-->
+                        <p><strong>Bandwidth Usage:</strong> Customer agrees that bandwidth that exceeds the given rate on a monthly basis will pay an "overage" as detailed on the Tundra Technologies website. Tundra Technologies will monitor Customer's bandwidth via MRTG. Tundra Technologies shall have the right to take corrective action if Customer's bandwidth is excessive and interrupts service for other customers. Such corrective action may include the assessment of additional charges, disconnection or discontinuance of any and all Services, or termination of this Agreement, which actions may be taken is in Tundra Technologies's sole and absolute discretion. If Tundra Technologies takes any corrective action under this section, Customer shall not be entitled to a refund of any fees paid in advance prior to such action. In the event that a customer exceeds the included allocation, Tundra Technologies may, at its sole discretion, collect a deposit, in an amount determined by Tundra Technologies.</p>
+                        <!--========-->
+                        <p><strong>System and Network Security:</strong> Users are prohibited from violating or attempting to violate the security of the Tundra Technologies Network. Violations of system or network security may result in civil or criminal liability. Tundra Technologies will investigate occurrences, which may involve such violations and may involve, and cooperate with, law enforcement authorities in prosecuting Users who are involved in such violations. These violations include, without limitation:<br>
+                            Accessing data not intended for such User or logging into a server or account, which such User is not authorized to access.<br>
+                            Attempting to probe, scan or test the vulnerability of a system or network or to breach security or authentication measures without proper authorization.&nbsp;This includes PCI or security scans by companies like, but not limited to McAfee, or Security Metrics. (PCI scans can be run, but MUST be pre approved by the account holder BEFORE they are run)<br>
+                            Attempting to interfere with service to any user, host or network, including, without limitation, via means of overloading, "flooding", "mail bombing" or "crashing".<br>
+                            Forging any TCP/IP packet header or any part of the header information in any e-mail or newsgroup posting.<br>
+                            Taking any action in order to obtain services to which such User is not entitled.<br>
+                            Addition of IP addresses that have not been specifically assigned to the server.<br>
+                            Due to the severity of security violations, Tundra Technologies reserves the right to cancel service immediately on the first violation
+                        </p>
+                        <!--========-->
+                        <p>In order to provide the securest posible environment for our users websites, we do not allow the installation of many open source content management systems, blogs, and BBS software, including, but not limited to PHPBB, WordPress, Joomla, Drupal, TYPO, EzPublish and PHP Nuke.&nbsp;If you have an open source software package you would like to install, please contact up prior to installation, to prevent violation or our Acceptable Use Policy.</p>
+                        <!--========-->
+                        <p><strong>Notification of Violation:</strong> Tundra Technologies is under no duty to look at each customer's or user's activities to determine if a violation of the AUP has occurred, nor do we assume any responsibility through our AUP to monitor or police Internet-related activities.</p>
+                        <!--========-->
+                        <p><strong>First violation:</strong> Any User, which Tundra Technologies determines to have violated any element of this Acceptable Use Policy, shall receive an email, warning them of the violation. The service may be subject at Tundra Technologies's discretion to a temporary suspension pending a User's agreement in writing, to refrain from any further violations. Except in the case of security violations, which may result in immediate termination.</p>
+                        <!--========-->
+                        <p><strong>Second Violation:</strong> Users that Tundra Technologies determines to have committed a second violation of any element of this Acceptable Use Policy shall be subject to immediate suspension or termination of service without further notice.<br>
+                            We reserve the right, to drop the section of IP space involved in Spam or Denial-of-Service complaints if it is clear that the offending activity is causing great harm to parties on the Internet. In particular, if open relays are on your network or a customer's network, or if denial of service attacks are originating from your network. In certain rare cases, we may have to do this before attempting to contact you. If we do this, we will contact you as soon as is feasible.<br>
+                            Suspension of Service or Cancellation: Tundra Technologies reserves the right to suspend network access to any customer if in the judgment of the Tundra Technologies network administrators the customer's server is the source or target of the violation of any of the other terms of the AUP or for any other reason which Tundra Technologies chooses. If inappropriate activity is detected, all accounts of the Customer in question will be deactivated until an investigation is complete. Prior notification to the Customer is not assured. In extreme cases, law enforcement will be contacted regarding the activity. The customer will not be credited for the time the customer's accounts/machines were suspended.<br>
+                            Tundra Technologies reserves the right to amend its policies at any time. All Sub-Networks, resellers and managed servers of Tundra Technologies must adhere to the above policies. Failure to follow any term or condition will be grounds for immediate Cancellation. You will be held responsible for the actions of your clients in the matter described on these Terms and conditions. Therefore, it is in your best interest to implement a similar or stricter Terms and conditions or otherwise called Acceptable Terms of use policy.
+                        </p>
+                        <!--========-->
+                        <p><strong>Indemnification:</strong> Tundra Technologies wishes to emphasize that in agreeing to the Tundra Technologies Acceptable Use Policy (AUP) and Terms of Service (ToS), customer indemnifies Tundra Technologies for any violation of the Acceptable Use Policy (AUP) and Terms of Service (ToS) that results in loss to Tundra Technologies or the bringing of any claim against Tundra Technologies by any third-party. This means that if Tundra Technologies is sued because of a customer's or a customer of a customer's activity, the customer will pay any damages awarded against Tundra Technologies, plus all costs and attorney's fees.<br>
+                            Miscellaneous Provisions: You MUST provide us with, and keep current, good contact information for you. E-mail, fax, and telephone contacts are used, in that order of preference.<br>
+                            A waiver by the Company of any breach of any provision of this Agreement by Client shall not operate as or be construed as a continuing or subsequent waiver thereof or as a waiver of any breach of any other provision thereof.<br>
+                            Client shall not transfer or assign this Agreement without the prior written consent of the Company. Company may assign Agreement at anytime without consent from or notice to Client. Company reserves right to cancel Clients rights under this contract at anytime without further obligation.<br>
+                            Tundra Technologies takes no responsibility for any material input by others and not posted to the Tundra Technologies Network by Tundra Technologies. Tundra Technologies is not responsible for the content of any other websites linked to the Tundra Technologies Network; links are provided as Internet navigation tools only. Tundra Technologies disclaims any responsibility for any such inappropriate use and any liability to any person or party for any other person or party's violation of this policy.<br>
+                            Tundra Technologies is not responsible for any damages your business may suffer. Tundra Technologies does not make implied or written warranties for any of our services. Tundra Technologies denies any warranty or merchantability for a specific purpose. This includes loss of data resulting from delays, non-deliveries, wrong delivery, and any and all service interruptions caused by Tundra Technologies.
+                        </p>
+                        <!--========-->
+                        <p><strong>Responsibility for Content:</strong> You, as Tundra Technologies's customer, are solely responsible for the content stored on and served by your Tundra Technologies server.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--====================footer====================-->
+        <footer class=" bg-white border-t">
+            <!--========-->
+            <div class="md:text-base text-sm flex sm:flex-row flex-col items-center sm:justify-between font-opensans container mx-auto xl:px-28 lg:px-16 sm:px-0 px-5 py-10">
+                <!--========-->
+                <div>
+                    <p class="text-gray-500">© 1997-2022 Tundra Technologies</p>
+                </div>
+                <!--========-->
+                <div>
+                    <ul class=" flex items-center space-x-4">
+                        <!--========-->
+                        <li>
+                            <a class=" text-blue-500 hover:opacity-80" href="terms-of-service.html">Terms of Service</a>
+                        </li>
+                        <!--========-->
+                        <li>
+                            <a class=" text-blue-500 hover:opacity-80" href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-----alpine Js---->
+        <script defer src="js/alpine.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+
+        <!--====================Custom script====================-->
+       <script>
+           //wow js 
+            new WOW().init();
+            
+       </script>
+    </body>
+</html>
